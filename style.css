@@ -1,0 +1,130 @@
+
+:root {
+  --height: 400px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
+  margin: 10px;
+}
+
+.bar-container {
+  border-radius: 9px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  background-color: #dfdfdf;
+  align-items: flex-end;
+}
+
+.bar {
+  height: var(--height);
+  display: flex;
+  border-radius: 3px;
+  margin-left: 1vw;
+  border: 5px solid #333;
+  background-color: #dfdfdf;
+  margin-right: 1vw;
+}
+
+.sort {
+  background-color: rgb(223, 223, 223);
+  padding: 1em .5em;
+  border-radius: 1em 1em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.sort:hover {
+  opacity: 0.6
+}
+
+.reset {
+  background-color: rgb(233, 233, 233);
+  padding: 1em 1em;
+  border-radius: 1em 1em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.reset:hover {
+  opacity: 0.6
+}
+
+
+.one {
+  max-height: calc(1 * (var(--height) / 15));
+}
+.two {
+  max-height: calc(2 * var(--height) / 15);
+}
+.three {
+  max-height: calc(3 * var(--height) / 15);
+}
+.four {
+  max-height: calc(4 * var(--height) / 15);
+}
+.five {
+  max-height: calc(5 * var(--height) / 15);
+}
+.six {
+  max-height: calc(6 * var(--height) / 15);
+}
+.seven {
+  max-height: calc(7 * var(--height) / 15);
+}
+.eight {
+  max-height: calc(8 * var(--height) / 15);
+}
+.nine {
+  max-height: calc(9 * var(--height) / 15);
+}
+.ten {
+  max-height: calc(10 * var(--height) / 15);
+}
+.eleven {
+  max-height: calc(11 * var(--height) / 15);
+}
+.twelve {
+  max-height: calc(12 * var(--height) / 15);
+}
+.thirteen {
+  max-height: calc(13* var(--height) / 15);
+}
+.fourteen {
+  max-height: calc(14 * var(--height) / 15);
+}
+.fifteen {
+  max-height: var(--height);
+}
+
