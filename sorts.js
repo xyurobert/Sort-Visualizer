@@ -112,6 +112,8 @@ async function selectionSort(arr,  n)
     bubbleButton.disabled = false;
     combButton.disabled = false;
     gnomeButton.disabled = false;
+    selectionButton.disabled = false;
+
 }
   
 async function insertionSort(arr, n) 
@@ -139,6 +141,7 @@ async function insertionSort(arr, n)
     bubbleButton.disabled = false;
     combButton.disabled = false;
     gnomeButton.disabled = false;
+    insertionButton.disabled = false;
 }
 
 async function bubbleSort(arr, n) {
@@ -162,6 +165,7 @@ async function bubbleSort(arr, n) {
     selectionButton.disabled = false;
     combButton.disabled = false;
     gnomeButton.disabled = false;
+    bubbleButton.disabled = false;
 }
 
     // To find gap between elements
@@ -216,6 +220,7 @@ async function combSort(arr) {
     selectionButton.disabled = false;
     bubbleButton.disabled = false;
     gnomeButton.disabled = false;
+    combButton.disabled = false;
 }
 
 async function gnomeSort(arr, n) {
@@ -242,6 +247,7 @@ async function gnomeSort(arr, n) {
     selectionButton.disabled = false;
     bubbleButton.disabled = false;
     combButton.disabled = false;
+    gnomeButton.disabled = false;
     return;
 }
 
@@ -260,6 +266,7 @@ selectionButton.addEventListener("click", function() {
         bubbleButton.disabled = true;
         combButton.disabled = true;
         gnomeButton.disabled = true;
+        selectionButton.disabled = true;
         
         selectionSort(items, 15)
     }
@@ -272,6 +279,7 @@ insertionButton.addEventListener("click", function() {
         bubbleButton.disabled = true;
         combButton.disabled = true;
         gnomeButton.disabled = true;
+        insertionButton.disabled = true;
         insertionSort(items, 15)
     }
 })
@@ -283,6 +291,7 @@ bubbleButton.addEventListener("click", function() {
         selectionButton.disabled = true;
         combButton.disabled = true;
         gnomeButton.disabled = true;
+        bubbleButton.disabled = true;
         bubbleSort(items, 15)
     }
 })
@@ -294,6 +303,7 @@ combButton.addEventListener("click", function() {
         bubbleButton.disabled = true;
         gnomeButton.disabled = true;
         insertionButton.disabled = true;
+        combButton.disabled = true;
         combSort()
     }
 })
@@ -306,6 +316,7 @@ gnomeButton.addEventListener("click", function() {
         bubbleButton.disabled = true;
         insertionButton.disabled = true;
         combButton.disabled = true;
+        gnomeButton.disabled = true;
         gnomeSort(items, 15)
     }
 })
